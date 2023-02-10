@@ -1,0 +1,68 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  /*background-color:#202328;*/
+}
+.cssFont_1 {
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    color: #157347;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+#demoparagraph {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 26px;
+    -moz-column-gap: 26px;
+    column-gap: 26px;
+    -webkit-column-rule: 1px solid rgba(28,110,164,0.16);
+    -moz-column-rule: 1px solid rgba(28,110,164,0.16);
+    column-rule: 1px solid rgba(28,110,164,0.16);
+}
+#demoparagraph strong {
+    color:white;
+}
+    #demoparagraph p {
+        color: white;
+    }
+.efeito a:hover {
+    background-color:white;
+}
+#efeitomenu a:hover {
+    background-color: #99FF99;
+}
+#efeitomenu {
+    margin-left:550px;
+}
+.imgestacionar {
+    
+    margin-left:-23px;
+    margin-top:30px;
+
+}
+.textoinicial{
+    color:darkblue;
+    margin-left:255px;
+       
+}

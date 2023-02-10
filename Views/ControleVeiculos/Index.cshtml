@@ -1,0 +1,83 @@
+﻿@model IEnumerable<WebParking.Models.ControleVeiculo>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="textoinicial">Gerenciamento de Veículos</h1>
+
+<p>
+    <button class="btn btn-dark"> <a asp-action="Create" style="color:white;text-decoration:none">Novo Cadastro</a> </button>
+</p>
+<table class="table" id="myTable">
+    <thead>
+        <tr>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Placa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Veiculo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Modelo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HoraEntrada)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HoraSaida)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValorPago)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Placa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Veiculo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Modelo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HoraEntrada)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HoraSaida)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorPago)
+            </td>
+            <td>
+                    <button class="btn btn-success"><a asp-action="Edit" asp-route-id="@item.Condutor" style="color:white;text-decoration:none">Alterar</a> </button>
+                    <button class="btn btn-primary">
+                        <a asp-action="Details" asp-route-id="@item.Condutor" style="color:white;text-decoration:none">Detalhes</a>
+                    </button>
+                    <button class="btn btn-danger">  <a asp-action="Delete" asp-route-id="@item.Condutor" style="color:white;text-decoration:none">Excluir</a></button>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('#myTable').DataTable();
+        });
+    </script>
+}

@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/Login.css" asp-append-version="true" />
+
+</head>
+<body bgcolor="#202328">
+
+<div class="text-center">
+   <div class="cssFont_1" style="font-family:'Lobster', cursive">
+       <h1>Sistema Gerenciador de Estacionamento</h1>
+       </div>
+
+            </div>
+            <br />
+
+
+<div id="demoparagraph">
+    <p><strong>Controlador</strong></p>
+    <p>Gerencia a entrada e saída de veículos, bem como faz o processo de cobrança do período que cada veículo permanece no estacionamento. 
+        É responsável por supervisionar que os veículos fiquem seguros e não sofram nenhum tipo de dano durante toda a permanência do mesmo no estacionamento
+    </p>
+    <button class="btn btn-success efeito">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Controlador">
+        Área de Login</a></button>
+    
+
+    <p><strong>Administrador</strong></p>
+   <p>Responsável pela parte administrativa. Tem acesso aos relatórios gerais onde mostra 
+       o   movimento diário e mensal. Tem acesso aos relatórios financeiros, visualizando
+       e controlando a receita diária e mensal. É responsável pela manutenção, limpeza e tudo o que seja necessário
+       para que o local esteja totalmente funcional. 
+   </p>
+    <button class="btn btn-success efeito">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Administrador">
+        Área de Login</a></button>
+</div>
+
+</body>
+</html>
+
+   
+
+ 
